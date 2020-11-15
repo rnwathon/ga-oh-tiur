@@ -1,0 +1,39 @@
+// === LATIHAN === //
+
+/*
+
+1.  Buat struktur data yang berisi daftar mahasiswa. Masing-masing mahasiswa memiliki data masing-masing yaitu:
+    Name, Age, Address (terdiri dari Street, City, dan Postal Code ), Major (jurusan), Semester.
+
+    Isi data nya minimal 5 data mahasiswa. Isi data random aja. Pake data temen-temen juga boleh.
+
+
+2.  Bikin function untuk nge-print di console daftar nama mahasiswa, semester dan Major nya (pake data yang udah dibikin tadi):
+
+    Expected Result (contoh):
+    
+    Name: Andi
+    Semester: 5
+    Major: Teknik Industri
+
+    Name: Budi
+    Semester 3
+    Major: Teknik Mesin
+
+    dst.
+
+3.  Ada mahasiswa baru gabung, tambahin data mahasiswa baru ke daftar mahasiswa tadi (data detailnya terserah aja).
+    Print hasilnya ke console dengan format yang sama dengan soal no. 2
+
+4.  Ceritanya udah lewat 1 semester nih, update semua data semester mahasiswa jadi tambah 1 karna udah naik semester.
+    Print hasilnya ke console dengan format yang sama dengan soal no. 2
+
+5.  Ada satu mahasiswa yang bolos terus, jadinya kena DO. Hapus data mahasiswa tersebut.  
+    Print hasilnya ke console dengan format yang sama dengan soal no. 2
+
+6.  Buat function sebagai berikut:
+    tambahMahasiswa(parameter disesuaikan)
+    updateMahasiswa(parameter disesuaikan)
+    deleteMahasiswa(parameter disesuaikan)
+
+*/
