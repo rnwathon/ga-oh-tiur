@@ -37,3 +37,68 @@
     deleteMahasiswa(parameter disesuaikan)
 
 */
+
+let dataMahasiswa = [
+  {
+    id: "1",
+    name: "Andi",
+    age: 20,
+    semester: 1
+  },
+  {
+    id: "2",
+    name: "Budi",
+    age: 20,
+    semester: 1
+  },
+  {
+    id: "3",
+    name: "Andi",
+    age: 24,
+    semester: 1
+  }
+]
+
+function printMahasiswa(){
+  for(let i = 0; i < dataMahasiswa.length; i++ ){
+    console.log("Nama: " + dataMahasiswa[i].name)
+    console.log("Umur: " + dataMahasiswa[i].age)
+    // console.log("Semester: " + dataMahasiswa[i].semester)
+  }
+}
+
+function tambahMahasiswa(name, age, semester){
+  dataMahasiswa.push({
+    name: name,
+    age: age,
+    semester: semester
+  })
+}
+
+function deleteMahasiswa(index){
+  dataMahasiswa.splice(index, 1)
+}
+
+function deleteKeyValueMahasiswa(key){
+  for(let i = 0; i < dataMahasiswa.length; i++){
+    delete dataMahasiswa[i][key]
+  }
+}
+
+tambahMahasiswa("Tiur", 22, 6)
+tambahMahasiswa("Rendi", 24, 14)
+
+printMahasiswa()
+
+console.log("================")
+
+deleteMahasiswa(3)
+
+printMahasiswa()
+
+console.log("================")
+
+deleteKeyValueMahasiswa("name")
+deleteKeyValueMahasiswa("age")
+
+console.log(dataMahasiswa)
